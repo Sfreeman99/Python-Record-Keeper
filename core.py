@@ -16,6 +16,12 @@ def names(recorder,name, opponent_name):
     {'Shedlia':{'Wins': 0, 'Losses': 0 }, 'Jo':{'Wins': 0, 'Losses': 0 }, 'Dil':{'Wins': 0, 'Losses': 0}, 'Penny':{'Wins': 0, 'Losses': 0 }, 'Duke': {'Wins': 0, 'Losses': 0}}
     >>> names({'Shedlia':{'Wins': 0, 'Losses': 0 }, 'Jo': {'Wins': 0, 'Losses': 0 }, 'Penny': {'Wins': 0, 'Losses': 0 }}, 'Penny', 'Jo')
     '''
+    if not roster.get(player_1, False):
+        roster[player_1] = {'wins': 0, 'losses': 0}
+    if not roster.get(player_2, False):
+        roster[player_2] = {'wins': 0, 'losses': 0}
+    return roster
+
     if (name in recorder) and (opponent_name in recorder):
         return None
     elif (name not in recorder) or (opponent_name not in recorder):
@@ -26,8 +32,14 @@ def names(recorder,name, opponent_name):
         return recorder
         
 def scores(your_score, opponent_score):
-    ''' '''
-               
+    '''(int, int) -> dictionary
+    
+    takes in two scores and applies them to the score dictionary
+    
+    >>> scores(4, 3)
+    
+    '''
+
 
 #need another function to compare the scores
 def compare_score(recorder, scores):
@@ -45,3 +57,13 @@ def compare_score(recorder, scores):
         recorder[opponent_name]['Wins'] += 1
         recorder[name]['Losses'] += 1
         return recorder[opponent_name]['Wins'] and recorder[name]['Losses']
+
+def record_game(player_1, p1_score, player_2, p2_score, loser, roster):
+    """ str, str, {'name': {'wins': int, 'losses': int}} -> {'name': {'wins': int, 'losses': int}}, str, str """
+    if p1_score > p2_score:
+        roster[player_1]['wins'] += 1
+        roster[player_2]['losses'] += 1
+    else:
+        roster[player_2]['wins'] += 1
+        roster[player_1]['losses'] += 1
+    return roster, winner, loser
