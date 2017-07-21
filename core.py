@@ -1,5 +1,3 @@
-
-
 #need a function to see if both names in the recorder
 def names(roster,name, opponent_name):
     ''' dict of names -> 
@@ -59,4 +57,4 @@ def record_game(player_1, p1_score, player_2, p2_score, loser, roster):
     else:
         roster[player_2]['wins'] += 1
         roster[player_1]['losses'] += 1
-    return roster, winner, loser
+    return roster
