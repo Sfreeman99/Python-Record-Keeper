@@ -1,4 +1,5 @@
 from core import *
+from record_disk import *
 
 def main():
     print('Welcome to Ping Pong Records')
@@ -7,9 +8,11 @@ def main():
     
     player_2 = input('Opponent what is your name:').title()
     
-    roster = ????
-    
-    names(roster,p1_score,p2_score)
+    roster = add_roster()
+
+    roster = names(roster,player_1,player_2)
+
+    print_to_roster(roster, player_1, player_2)
     
     p1_score = int(input('What was your score:'))
     
@@ -17,11 +20,11 @@ def main():
     
     
 
-recorder_scores = {
-        'Shedlia': {'Wins':0 , 'Losses':0 },
-        'Jo':{'Wins': 0, 'Losses': 0}
-        }
-        roster[winner]['wins'] = roster[winner]['wins'] + 1
+# recorder_scores = {
+#         'Shedlia': {'Wins':0 , 'Losses':0 },
+#         'Jo':{'Wins': 0, 'Losses': 0}
+#         }
+#         roster[winner]['wins'] = roster[winner]['wins'] + 1
 
 # def main():
 #     roster = record_game(player_1, p1_score, player_2, p2_score, roster)
