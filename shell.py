@@ -9,7 +9,7 @@ def main():
     
     recorder = recorder_scores
     
-    names(recorder,p1_score,p2_score)
+    names(roster,p1_score,p2_score)
     
     p1_score = input('What was your score:')
     

@@ -1,7 +1,7 @@
 
 
 #need a function to see if both names in the recorder
-def names(recorder,name, opponent_name):
+def names(roster,name, opponent_name):
     ''' dict of names -> 
     
     Takes in both names and either sends you to the next function
@@ -22,41 +22,34 @@ def names(recorder,name, opponent_name):
         roster[player_2] = {'wins': 0, 'losses': 0}
     return roster
 
-    if (name in recorder) and (opponent_name in recorder):
-        return None
-    elif (name not in recorder) or (opponent_name not in recorder):
-        if name not in recorder:
-            recorder[name] = {'Wins': 0, 'Losses': 0}
-        if opponent_name not in recorder:
-            recorder[opponent_name] = {'Wins': 0, 'Losses': 0}
-        return recorder
+    # if (name in recorder) and (opponent_name in recorder):
+    #     return None
+    # elif (name not in recorder) or (opponent_name not in recorder):
+    #     if name not in recorder:
+    #         recorder[name] = {'Wins': 0, 'Losses': 0}
+    #     if opponent_name not in recorder:
+    #         recorder[opponent_name] = {'Wins': 0, 'Losses': 0}
+    #     return recorder
         
-def scores(your_score, opponent_score):
-    '''(int, int) -> dictionary
-    
-    takes in two scores and applies them to the score dictionary
-    
-    >>> scores(4, 3)
-    
-    '''
+
 
 
 #need another function to compare the scores
-def compare_score(recorder, scores):
-    '''(dict, dict) -> 
+# def compare_score(recorder, scores):
+#     '''(dict, dict) -> 
     
-    takes in both scores and compares them to each other
-    then returns who won and who loss
+#     takes in both scores and compares them to each other
+#     then returns who won and who loss
     
-    >>> compare_score({'Shedlia':{'Wins': 0, 'Losses': 0}, 'Jo': {'Wins': 0, 'Losses': 0}}, {'a': 3, 'b': 7})'''
-    if your_score > opponent_score:
-        recorder[name]['Wins'] += 1
-        recorder[opponent_name]['Losses'] += 1
-        return recorder[name]['Wins'] and recorder[opponent_name]['Losses']
-    elif your_score < opponent_score:
-        recorder[opponent_name]['Wins'] += 1
-        recorder[name]['Losses'] += 1
-        return recorder[opponent_name]['Wins'] and recorder[name]['Losses']
+#     >>> compare_score({'Shedlia':{'Wins': 0, 'Losses': 0}, 'Jo': {'Wins': 0, 'Losses': 0}}, {'a': 3, 'b': 7})'''
+#     if your_score > opponent_score:
+#         recorder[name]['Wins'] += 1
+#         recorder[opponent_name]['Losses'] += 1
+#         return recorder[name]['Wins'] and recorder[opponent_name]['Losses']
+#     elif your_score < opponent_score:
+#         recorder[opponent_name]['Wins'] += 1
+#         recorder[name]['Losses'] += 1
+#         return recorder[opponent_name]['Wins'] and recorder[name]['Losses']
 
 def record_game(player_1, p1_score, player_2, p2_score, loser, roster):
     """ str, str, {'name': {'wins': int, 'losses': int}} -> {'name': {'wins': int, 'losses': int}}, str, str """
