@@ -1,5 +1,3 @@
-
-
 #need a function to see if both names in the recorder
 def names(recorder,name, opponent_name):
     ''' dict of names -> 
