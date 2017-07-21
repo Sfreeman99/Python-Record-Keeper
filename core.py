@@ -1,5 +1,5 @@
 #need a function to see if both names in the recorder
-def names(recorder,name, opponent_name):
+def names(roster,name, opponent_name):
     ''' dict of names -> 
     
     Takes in both names and either sends you to the next function
@@ -20,14 +20,14 @@ def names(recorder,name, opponent_name):
         roster[player_2] = {'wins': 0, 'losses': 0}
     return roster
 
-    if (name in recorder) and (opponent_name in recorder):
-        return None
-    elif (name not in recorder) or (opponent_name not in recorder):
-        if name not in recorder:
-            recorder[name] = {'Wins': 0, 'Losses': 0}
-        if opponent_name not in recorder:
-            recorder[opponent_name] = {'Wins': 0, 'Losses': 0}
-        return recorder
+    # if (name in recorder) and (opponent_name in recorder):
+    #     return None
+    # elif (name not in recorder) or (opponent_name not in recorder):
+    #     if name not in recorder:
+    #         recorder[name] = {'Wins': 0, 'Losses': 0}
+    #     if opponent_name not in recorder:
+    #         recorder[opponent_name] = {'Wins': 0, 'Losses': 0}
+    #     return recorder
         
 def scores(your_score, opponent_score):
     '''(int, int) -> dictionary
@@ -64,4 +64,4 @@ def record_game(player_1, p1_score, player_2, p2_score, loser, roster):
     else:
         roster[player_2]['wins'] += 1
         roster[player_1]['losses'] += 1
-    return roster, winner, loser
+    return roster
