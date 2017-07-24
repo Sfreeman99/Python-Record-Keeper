@@ -1,1 +1,3 @@
 Name, Wins, Losses
+Shedlia, 0, 0
+Jo, 0, 0

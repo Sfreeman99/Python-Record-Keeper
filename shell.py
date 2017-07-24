@@ -8,9 +8,9 @@ def main():
     
     player_2 = input('Opponent what is your name:').title()
     
-    roster = add_roster()
+    roster = give_roster()
 
-    roster = names(roster,player_1,player_2)
+    names(roster,player_1,player_2)
 
     print_to_roster(roster, player_1, player_2)
     
@@ -25,10 +25,7 @@ def main():
 #         'Jo':{'Wins': 0, 'Losses': 0}
 #         }
 #         roster[winner]['wins'] = roster[winner]['wins'] + 1
-
 # def main():
 #     roster = record_game(player_1, p1_score, player_2, p2_score, roster)
-
-scores = {}
 if __name__=='__main__':
     main()

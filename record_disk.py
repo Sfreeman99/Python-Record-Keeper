@@ -1,7 +1,11 @@
 def give_roster():
     with open("Roster.txt","r") as files:
         files.readline()
-        roster = files.readlines()
+        contestants = files.readlines()
+    roster = {}
+    for item in contestants:
+        sublist = item.split(', ')
+        roster[sublist[0]] = {'Wins': int(sublist[1]),'Losses': int(sublist[2])}
     return roster
 
 def add_roster():
@@ -14,11 +18,3 @@ def add_roster():
         d = {key_1: Name, key_2: Wins, key_3: Losses}
     return d
 
-def print_to_roster(roster,player_1, player_2):
-    print(roster.keys())
-    with open("Roster.txt", "a") as files:
-        files.write("{}".format(roster))
-        
-        
-
-    
