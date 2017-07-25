@@ -23,10 +23,10 @@ def names(roster,player_1, player_2):
 
 def record_game(player_1, p1_score, player_2, p2_score, roster):
     """ str, str, {'name': {'wins': int, 'losses': int}} -> {'name': {'wins': int, 'losses': int}}, str, str """
-    print(roster)
     if p1_score > p2_score:
         roster[player_1]['Wins'] += 1
         roster[player_2]['Losses'] += 1
+        print(roster)
     else:
         roster[player_2]['Wins'] += 1
         roster[player_1]['Losses'] += 1

@@ -22,8 +22,9 @@ def main():
     
     p2_score = int(input('What was your opponent\'s score: '))
     
-    record_game(player_1,p1_score,player_2,p2_score, roster)
+    new_record = record_game(player_1,p1_score,player_2,p2_score, roster)
     
+    dict_to_file(new_record)
 
 # recorder_scores = {
 #         'Shedlia': {'Wins':0 , 'Losses':0 },
