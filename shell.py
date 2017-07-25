@@ -10,10 +10,6 @@ def main():
     
     roster = give_roster()
 
-    # roster = give_name(roster,player_1,player_2)
-
-    # add_to_roster(roster)
-
     new_roster = names(roster,player_1,player_2)
 
     dict_to_file(new_roster)
@@ -26,12 +22,5 @@ def main():
     
     dict_to_file(new_record)
 
-# recorder_scores = {
-#         'Shedlia': {'Wins':0 , 'Losses':0 },
-#         'Jo':{'Wins': 0, 'Losses': 0}
-#         }
-#         roster[winner]['wins'] = roster[winner]['wins'] + 1
-# def main():
-#     roster = record_game(player_1, p1_score, player_2, p2_score, roster)
 if __name__=='__main__':
     main()
