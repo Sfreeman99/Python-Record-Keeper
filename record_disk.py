@@ -14,5 +14,6 @@ def dict_to_file(new_roster):
         message += '{}, {}, {}\n'.format(key, value['Wins'], value['Losses'])
     with open("Roster.txt", "w") as files:
         files.write(message)
+
             
 
