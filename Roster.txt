@@ -1,3 +1,5 @@
 Name, Wins, Losses
+Jo, 0, 0
 Shedlia, 0, 0
+Angel, 0, 0
 Jo, 0, 0

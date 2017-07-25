@@ -10,14 +10,19 @@ def main():
     
     roster = give_roster()
 
-    names(roster,player_1,player_2)
+    # roster = give_name(roster,player_1,player_2)
 
-    add_to_roster(roster)
-    
+    # add_to_roster(roster)
+
+    new_roster = names(roster,player_1,player_2)
+
+    dict_to_file(new_roster)
+
     p1_score = int(input('What was your score:'))
     
     p2_score = int(input('What was your opponent\'s score: '))
     
+    record_game(player_1,p1_score,player_2,p2_score, roster)
     
 
 # recorder_scores = {
