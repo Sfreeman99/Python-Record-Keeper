@@ -1,1 +1,6 @@
 Name, Wins, Losses
+<<<<<<< HEAD
+=======
+Shedlia, 0, 0
+Jo, 0, 0
+>>>>>>> 6f1aecbb7060b7bc72af08082fbb42dedfc96a15
