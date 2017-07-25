@@ -1,5 +1,6 @@
 from core import *
 from record_disk import *
+from Tkinter import *
 
 def main():
     print('Welcome to Ping Pong Records')
