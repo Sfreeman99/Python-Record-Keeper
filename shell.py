@@ -12,7 +12,7 @@ def main():
 
     names(roster,player_1,player_2)
 
-    print_to_roster(roster, player_1, player_2)
+    add_to_roster(roster)
     
     p1_score = int(input('What was your score:'))
     
