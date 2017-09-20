@@ -3,3 +3,5 @@ Trey, 0, 0
 Shedlia, 0, 0
 Jo, 0, 0
 Angel, 0, 0
+Jo, 1, 1
+Shedlia, 1, 1

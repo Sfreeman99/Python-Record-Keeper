@@ -5,7 +5,7 @@ def give_roster():
     roster = {}
     for item in contestants:
         sublist = item.split(', ')
-        roster[sublist[0]] = {'Wins': int(sublist[1]),'Losses': int(sublist[2]), 'Ties': int(sublist[3])}
+        roster[sublist[0]] = {'Wins': int(sublist[1]),'Losses': int(sublist[2])}
     return roster
 
 def dict_to_file(new_roster):
