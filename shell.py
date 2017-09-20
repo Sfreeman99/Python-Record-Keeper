@@ -35,10 +35,11 @@ def main():
         roster = names(roster, team_2)
         record_game(team_1, team_2, roster)
         dict_to_file(roster)
-
         # add to records
         # update file
         print_record(team_1, team_2)
+        print(read_roster())
+
         if input('continue? (y/n) ') == 'y':
             continue
         else:

@@ -4,6 +4,11 @@ def winners_and_losers(team_1, team_2):
     if team_1['score'] > team_2['score']:
         team_1['win'] = 'WINNER'
         team_2['win'] = 'LOSER'
+
+    elif team_1['score'] == team_2['score']:
+        team_1['win'] = 'TIE'
+        team_2['win'] = 'TIE'
+
     else:
         team_1['win'] = 'LOSER'
         team_2['win'] = 'WINNER'
