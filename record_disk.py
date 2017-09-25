@@ -23,8 +23,8 @@ def give_roster():
 def dict_to_file(new_roster):
     message = 'Name, Wins, Losses, Ties\n'
     for name, d in new_roster.items():
-        message += '{} | {} | {} | {} | {}'.format(
-            name, d['Wins'], d['Losses'], d['Ties']), d['W/L']
+        message += '{} | {} | {} | {} | {} \n'.format(
+            name, d['Wins'], d['Losses'], d['Ties'], d['W/L'])
     with open("Roster.txt", "w") as files:
         files.write(message)
 
