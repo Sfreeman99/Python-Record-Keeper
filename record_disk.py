@@ -34,6 +34,6 @@ def read_roster():
     with open("Roster.txt", "r") as files:
         files.readline()
         contestants = files.readlines()
-    message = 'Name | Wins | Losses | Ties | Win/ Loss % \n'
+    message = 'Name | Wins | Losses | Ties | Win/Loss%\n'
 
     return (message + '\n'.join(contestants))
