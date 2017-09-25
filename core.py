@@ -24,7 +24,7 @@ def names(roster, team):
     '''
     for player in team['players']:
         if not roster.get(player, False):
-            roster[player] = {'Wins': 0, 'Losses': 0, 'Ties': 0}
+            roster[player] = {'Wins': 0, 'Losses': 0, 'Ties': 0, 'W/L': 0}
     return roster
 
 
